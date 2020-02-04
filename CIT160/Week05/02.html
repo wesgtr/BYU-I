@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Miles Per Gallon</title>
+    <script>
+
+        function calculateMilesPerGallon() {
+
+            let beginning = parseFloat(document.getElementById('beginning').value);
+            let ending = parseFloat(document.getElementById('ending').value);
+            let gallons = parseFloat(document.getElementById('gallons').value);
+
+            let miles = ending - beginning;
+            let mpg = miles / gallons;
+
+            let result = 'Your car  makes an average of ' + mpg + ' miles per gallon.';
+
+            document.getElementById('outputDiv').innerHTML = result;
+        }
+    </script>
+</head>
+
+<body>
+Please enter <u><strong>beginning</strong> odometer:</u> <input type="text" id="beginning"><br/><br/>
+Please enter <u><strong>ending</strong> odometer:</u> <input type="text" id="ending"><br/><br/>
+Please enter <u><strong>gallons</strong> of gasoline used:</u> <input type="text" id="gallons"><br/><br/>
+<button type="button" onclick="calculateMilesPerGallon()">Calculate Miles per Gallon</button><br/><br/>
+<div id="outputDiv"></div>
+</body>
+</html>
