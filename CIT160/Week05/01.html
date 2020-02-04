@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Quart to Liters Convertion</title>
+    <script>
+
+        function convertToLiters() {
+
+            let quart = 0.946352946; // 1 qt US = 0.946352946 L
+            let quartAmount = parseFloat(document.getElementById('quartVolume').value);
+
+            let liters = quart * quartAmount;
+
+            let conrted = 'This amount of Quart is equal ' + liters + 'liters.';
+
+            document.getElementById('outputDiv').innerHTML = conrted;
+        }
+    </script>
+</head>
+
+<body>
+Please enter Quart volume: <input type="text" id="quartVolume"><br/><br/>
+<button type="button" onclick="convertToLiters()">Convert</button><br/><br/>
+<div id="outputDiv"></div>
+</body>
+</html>
