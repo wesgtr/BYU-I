@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Test Your Math Skills!</title>
+    <script>
+
+        function mathSkills() {
+
+            let n1 = parseFloat(document.getElementById('n1').value);
+            let optr = document.getElementById('operator').value;
+            let n2 = parseFloat(document.getElementById('n2').value);
+            let result = parseFloat(document.getElementById('result').value);
+            let message = 'Incorrect! Try again!';
+
+            if (optr === '/'){
+                if (result === n1 / n2){
+                    message = 'Correct! Good job!';
+                }
+            }
+
+            if (optr === '*'){
+                if (result === n1 * n2){
+                    message = 'Correct! Good job!';
+                }
+            }
+
+            if (optr === '+'){
+                if (result === n1 + n2){
+                    message = 'Correct! Good job!';
+                }
+            }
+
+            if (optr === '-'){
+                if (result === n1 - n2){
+                    message = 'Correct! Good job!';
+                }
+            }
+
+
+            document.getElementById('outputDiv').innerHTML = message;
+        }
+    </script>
+</head>
+
+<body>
+<h1>Test Your Math Skills!</h1>
+<input type="text" id="n1" style="max-width: 80px" placeholder="number 1">
+<input type="text" id="operator" style="max-width: 25px" placeholder="optr">
+<input type="text" id="n2" style="max-width: 80px" placeholder="number 2"> =
+<input type="text" id="result" style="max-width: 80px" placeholder="result"><br/><br/>
+<button type="button" onclick="mathSkills()">mathSkills</button><br/><br/>
+<div id="outputDiv"></div>
+</body>
+</html>

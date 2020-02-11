@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Choose Your Foot Wear</title>
+    <script>
+
+        function footWear() {
+
+            let weather = document.getElementById('weather').value;
+            let footWear;
+
+            if (weather === 'hot'){
+                footWear = 'sandals';
+            } else if (weather === 'rain') {
+                footWear = 'galoshes';
+            } else if (weather === 'snow') {
+                footWear = 'boots';
+            } else {
+                footWear = 'shoes';
+            }
+            document.getElementById('outputDiv').innerHTML = 'Today we recomend you to use ' + footWear;
+        }
+    </script>
+</head>
+
+<body>
+How is the weather today? <input type="text" id="weather"><br/><br/>
+<button type="button" onclick="footWear()">What Foot Wear</button><br/><br/>
+<div id="outputDiv"></div>
+</body>
+</html>
