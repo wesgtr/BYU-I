@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta charset="utf-8">
+    <title>Quart to Liters Convertion</title>
+    <script>
 
+        function convertToLiters() {
+
+            let x = 2, y = 6, z = 5;
+            let result = (x < 3 && (y < 7 ^ z != 3));
+            console.log('result', result);
+
+            document.getElementById('outputDiv').innerHTML = result;
+        }
+    </script>
+</head>
+
+<body>
+Please enter Quart volume: <input type="text" id="quartVolume"><br/><br/>
+<button type="button" onclick="convertToLiters()">Convert</button><br/><br/>
+<div id="outputDiv"></div>
 </body>
 </html>
