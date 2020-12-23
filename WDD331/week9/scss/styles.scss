@@ -1,0 +1,309 @@
+@import '../scss/typography';
+@import '../scss/icons';
+
+$sm-break: 48em;
+// colors
+$dark-gray: #727272;
+$med-gray: #b4b3b5;
+$light-gray: #eaeaea;
+$body-font: #020202;
+$link-blue: #0076b6; //why do we have both of these blues?
+$byui-blue: #056cb6;
+
+// Utility classes
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+.white-span{
+  color: #eaeaea;
+}
+.font-blue{
+  color: $link-blue;
+}
+.font-black{
+  color: $body-font;
+}
+.font-gray{
+  color: $light-gray;
+}
+.background-byu-blue{
+  background-color: $byui-blue;
+}
+.background-gray{
+  background-color: $med-gray;
+}
+.background-dark-gray{
+  background-color: $dark-gray;
+}
+.background-light-gray{
+  background-color: $light-gray;
+}
+.font-normal{
+  font-family: 'OpenSans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.font-light{
+  font-family: 'OpenSans-Light', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* SMALL */
+body{
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: $byui-blue;
+  .blue-bar{
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      background-color: $body-font;
+      color: #eaeaea;
+      width: 4em;
+      height: 3em;
+      text-align: center;
+
+    }
+    .icons{
+      font-size: 2em;
+    }
+  }
+  .gray-bar {
+    text-align: center;
+    background-color: $med-gray;
+    font-size: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+.media {
+  padding: 0.5em;
+  .block-media {
+    margin-bottom: 10px;
+    border: 1px solid $med-gray;
+    .image-full-block{
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .image-media {
+      max-height: 90%;
+      max-width: 100%;
+    }
+    .text-media {
+      font-size: 1em;
+      margin-left: 1em;
+      height: 2em;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.info {
+  text-align: center;
+  .information-info{
+    select {
+      width: 96%;
+      height: 3em;
+      border-radius: 5px;
+      font-weight: bold;
+      padding-left: 1em;
+    }
+  }
+}
+.links-info{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  .link-header {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    text-align: left;
+    padding-left: 1em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+  }
+  .important-links {
+    display: grid;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    span {
+      border: 1px solid $dark-gray;
+      height: 2em;
+      display: flex;
+      align-items: center;
+      padding-left: 1em;
+    }
+    span:hover{
+      background-color: $light-gray;
+    }
+  }
+}
+
+.date-info{
+  margin-bottom: 1em;
+  .dates-header{
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    text-align: left;
+    padding-left: 1em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+  }
+  .important-dates{
+    display: grid;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    span {
+      border-bottom: 1px solid $dark-gray;
+      height: 2em;
+      display: flex;
+      align-items: center;
+      padding-left: 1em;
+    }
+    span:hover{
+      background-color: $light-gray;
+      color: $link-blue;
+    }
+  }
+}
+
+.newsroom {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  img{
+    display: none;
+  }
+  .news-item{
+    border-top: 2px solid $med-gray;
+    margin-bottom: 2em;
+    h4{
+      font-size: 0.7em;
+    }
+  }
+}
+
+.devotionals{
+  margin-bottom: 1em;
+  margin-top: 1em;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid $med-gray;
+  border-radius: 10px;
+  img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .devotional-texts {
+    padding: 0.8em;
+    font-size: 0.7em;
+  }
+}
+
+@media (min-width: 550px) {
+  header {
+    .blue-bar {
+      height: 4em;
+      padding-left: 5.5em;
+      padding-right: 5.5em;
+      .logo {
+        width: 100px;
+        height: 4.5em;
+        padding-top: 1.5em;
+        padding-bottom: 1em;
+        font-size: 1.6em;
+        word-break: normal;
+      }
+    }
+    .gray-bar {
+      font-size: 3em;
+      padding-top: 1em;
+      height: 3em;
+      padding-left: 1.7em;
+      text-align: left;
+    }
+  }
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1em;
+    padding-top: 3em;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  .media {
+    display: grid;
+    row-gap: 1em;
+    .media-line {
+      display: grid;
+      grid-gap: 2em;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .links-info{
+    .link-header{
+      height: 2em;
+      font-size: 1.6em;
+    }
+    .important-links{
+      span{
+        height: 2.7em;
+      }
+    }
+  }
+  .date-info {
+    .dates-header {
+      font-size: 1.6em;
+      height: 2.7em;
+    }
+    .important-dates{
+      span {
+        height: 2.7em;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
+  }
+  .devotionals{
+    height: 50%;
+  }
+}
+
+
+

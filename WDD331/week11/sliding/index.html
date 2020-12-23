@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="scss/style.css" />
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">One</a>
+    <a href="#">Two</a>
+    <a href="#">Three</a>
+    <a href="#">Four</a>
+</div>
+
+<span class="spanNav" onclick="openNav()">&#9776;</span>
+<h2>Animated Slideout Menu</h2>
+<p>All the stuff.</p>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+</body>
+</html>

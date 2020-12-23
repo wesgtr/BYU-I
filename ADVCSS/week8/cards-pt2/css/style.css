@@ -1,0 +1,145 @@
+.card {
+  height: 2.5in;
+  width: 2.5in;
+  border-radius: 0.0625in;
+  background: #fff; }
+
+.table .card {
+  height: 3.5in;
+  width: 2.5in; }
+
+.diamonds {
+  color: red; }
+
+.diamonds .pip::before {
+  content: "\2662"; }
+
+body {
+  background-color: #0b2e13; }
+
+@supports (display: grid) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(2.5in, 1fr));
+    grid-gap: 0.125in; }
+
+  .card {
+    display: grid;
+    grid-template-columns: 0.375in 1fr 0.375in; }
+
+  .card::before,
+  .card::after {
+    font-size: 1.5rem;
+    text-align: center; }
+
+  .card::before {
+    grid-row: 1;
+    grid-column: 1; }
+
+  .card::after {
+    grid-row: 2;
+    grid-column: 3;
+    transform: rotatez(180deg); }
+
+  .card .inside {
+    font-size: 4rem;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    line-height: 1; }
+
+  .seven .pip:nth-child(1) {
+    grid-column: 2;
+    grid-row: 2 / span 5;
+    align-self: start; }
+
+  .seven .pip:nth-child(2),
+  .seven .pip:nth-child(3) {
+    grid-row: 1 / span 2;
+    align-self: start; }
+
+  .seven .pip:nth-child(4),
+  .seven .pip:nth-child(5) {
+    grid-row: 3 / span 2; }
+
+  .seven .pip:nth-child(6),
+  .seven .pip:nth-child(7) {
+    grid-row: 5 / span 2;
+    align-self: end; }
+
+  .pip:nth-child(n + 6) {
+    transform: rotate(180deg); } }
+@supports not (display: grid) {
+  .col-1 {
+    flex: 0 0 12.5%; }
+
+  .col-2 {
+    flex: 0 0 25%; }
+
+  .col-3 {
+    flex: 0 0 37.5%; }
+
+  .col-4 {
+    flex: 0 0 50%; }
+
+  .col-5 {
+    flex: 0 0 62.5%; }
+
+  .col-6 {
+    flex: 0 0 75%; }
+
+  .col-7 {
+    flex: 0 0 87.5%; }
+
+  .col-8 {
+    flex: 0 0 100%; }
+
+  .offset-1 {
+    margin-left: 12.5%; }
+
+  .offset-2 {
+    margin-left: 25%; }
+
+  .offset-3 {
+    margin-left: 37.5%; }
+
+  .offset-4 {
+    margin-left: 50%; }
+
+  .offset-5 {
+    margin-left: 62.5%; }
+
+  .offset-6 {
+    margin-left: 75%; }
+
+  .offset-7 {
+    margin-left: 87.5%; }
+
+  .offset-8 {
+    margin-left: 100%; }
+
+  .card {
+    border: 1px solid grey;
+    height: 3.5in;
+    width: 2.5in;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 2px 2px 4px grey; }
+
+  .tables {
+    padding: .5em; }
+
+  .inside {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-between;
+    height: 100%;
+    font-size: 3em; }
+
+  .pip {
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */

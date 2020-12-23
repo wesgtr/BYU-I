@@ -1,0 +1,71 @@
+// LIST PADDING SPECS FOR ASIDE
+
+@mixin listPad($pad) {
+  @if $pad == listSmall {
+    padding: 1em 10%;
+  }
+  @if $pad == listLarge {
+    padding: .5em;
+  }
+}
+
+// USE A FUNCTION TO SET THE PADDING OF AN ELEMENT
+
+@mixin pad($pad) {
+  padding: $pad;
+}
+
+@mixin pad2($pad1, $pad2) {
+  padding: $pad1 $pad2;
+}
+
+@mixin pad4($pad1, $pad2, $pad3, $pad4) {
+  padding: $pad1 $pad2 $pad3 $pad4;
+}
+
+@mixin pad-direct($align, $pad) {
+  @if $align == T {
+    padding-top: $pad;
+  }
+  @else if $align == R {
+    padding-right: $pad;
+  }
+  @if $align == B {
+    padding-bottom: $pad;
+  }
+  @if $align == L {
+    padding-left: $pad;
+  }
+}
+
+// USE A FUNCTION TO SET THE MARGIN OF AN ELEMENT
+
+@mixin marg($m) {
+  margin: $m;
+}
+
+@mixin marg2($m1, $m2) {
+  margin: $m1 $m2;
+}
+
+@mixin marg4($m1, $m2, $m3, $m4) {
+  margin: $m1 $m2 $m3 $m4;
+}
+
+@mixin marg-direct($align, $m) {
+  @if $align == T {
+    margin-top: $m;
+  }
+  @else if $align == R {
+    margin-right: $m;
+  }
+  @if $align == B {
+    margin-bottom: $m;
+  }
+  @if $align == L {
+    margin-left: $m;
+  }
+}
+
+
+

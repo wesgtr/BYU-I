@@ -1,0 +1,104 @@
+body {
+  .page-wrapper{
+    .intro{
+      header {
+        position: relative;
+        text-align: center;
+        line-height: 0.4em;
+        height: 4em;
+        margin-top: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        width: 100%;
+        h2 {
+          background-color: grey;
+          width: 80%;
+          text-align: center;
+          position: relative;
+          margin-right: auto;
+          margin-left: auto;
+          padding-top: 0.5em;
+          padding-bottom: 0.5em;
+          border-radius: 10px;
+          color: white;
+        }
+      }
+    }
+    .summary {
+      display: none;
+    }
+    .96%le {
+      display: none;
+    }
+    .main{
+      .block-color-1{
+        text-align: left;
+        position: relative;
+        background-color: white;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+        p{
+          a, a:hover, a:focus, a:active {
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+      }
+      .block-color-2{
+        text-align: left;
+        position: relative;
+        background-color: darkgray;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+        border-radius: 10px;
+        border: 2px solid gray;
+        p{
+          a, a:hover, a:focus, a:active {
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+      }
+    }
+    .design-archives{
+      display: none;
+    }
+    .zen-resources{
+      display: none;
+    }
+  }
+  footer {
+    position: relative;
+    margin: 1em;
+    text-align: center;
+    display: block;
+    a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+    }
+    a {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+    }
+  }
+  aside{
+    .wrapper{
+      .design-selection{
+        h3.select {
+          display: none;
+        }
+        nav{
+          ul{
+            li{
+              list-style: none
+            }
+          }
+        }
+      }
+    }
+  }
+}

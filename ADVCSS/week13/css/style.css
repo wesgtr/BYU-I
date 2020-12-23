@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Raleway:wght@600&family=Bungee+Outline&display=swap");
+@import url("https://kit.fontawesome.com/a076d05399.js");
+/* -------------------------------
+
+xMIXINS
+
+------------------------------- */
+/* --------------------------------
+
+xTypography
+
+-------------------------------- */
+h1 {
+  font-family: "Bungee Outline", cursive;
+  font-size: 48px; }
+  @media only screen and (max-width: 560px) {
+    h1 {
+      font-size: 38px; } }
+
+h2 {
+  font-family: "Bungee Inline", cursive;
+  color: #EDD397;
+  text-align: center;
+  text-emphasis: triangle #6fce72;
+  text-emphasis-position: under;
+  text-decoration: overline;
+  text-decoration-color: #c7121e;
+  font-weight: lighter;
+  font-size: 24px; }
+  @media only screen and (max-width: 560px) {
+    h2 {
+      font-size: larger; } }
+
+h3 {
+  font-family: "Bungee Inline", cursive;
+  color: #EDD397;
+  padding: 0.5em 1em 0.5em 0.5em;
+  background-color: #180D0C;
+  color: #EDD397;
+  text-emphasis: triangle #6fce72;
+  text-emphasis-position: under;
+  text-decoration: overline;
+  text-decoration-color: #c7121e;
+  font-weight: lighter; }
+  @media only screen and (min-width: 560px) {
+    h3 {
+      font-size: 1.5vw; } }
+  @media only screen and (max-width: 1075px) and (min-width: 560px) {
+    h3 {
+      font-size: 16px;
+      line-height: 1em; } }
+
+p,
+a {
+  font-family: "Raleway", sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+ul {
+  margin: 0;
+  list-style: none; }
+
+body {
+  background-color: #f8f8f8;
+  /* ------------------------ INTRO SECTION ------------------------- */
+  /* ------------------- MAIN SUPPORTING -------------------- */
+  /* ------------------- SIDEBAR ----------------------- */
+  /* ---------------------- FOOTER ------------------------- */ }
+  @media only screen and (max-width: 560px) {
+    body {
+      margin: auto; }
+      body p {
+        margin: 8px; }
+      body h3 {
+        text-align: center; } }
+  body .intro header {
+    position: relative;
+    text-align: center;
+    line-height: 0.4em;
+    margin-top: 1em;
+    padding-top: 1em;
+    width: 100%; }
+    body .intro header h2 {
+      background-color: #180D0C;
+      position: relative;
+      border-radius: 5px;
+      width: fit-content;
+      margin: auto;
+      padding: 0.5em 0.5em; }
+      @media only screen and (max-width: 560px) {
+        body .intro header h2 {
+          width: 100%;
+          border-radius: 2px; } }
+  body .intro .summary {
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid #180D0C;
+    border-bottom: 1px solid #180D0C;
+    margin: auto; }
+    @media only screen and (min-width: 560px) {
+      body .intro .summary {
+        max-width: 80%;
+        border: 1px solid black;
+        border-radius: 0 0 10px 10px; } }
+    body .intro .summary :first-child {
+      text-align: center;
+      width: 90%;
+      margin: auto;
+      margin-bottom: 1em; }
+      body .intro .summary :first-child abbr {
+        padding-top: 2em; }
+    body .intro .summary :last-child {
+      margin: auto;
+      width: 90%; }
+  body .intro .preamble {
+    background-color: #f8f8f8; }
+    @media only screen and (min-width: 560px) {
+      body .intro .preamble {
+        width: 60%;
+        margin: auto; }
+        body .intro .preamble h3 {
+          position: relative;
+          left: -28%;
+          text-align: right;
+          width: inherit; } }
+    @media only screen and (max-width: 1075px) and (min-width: 560px) {
+      body .intro .preamble {
+        margin: initial; }
+        body .intro .preamble h3 {
+          text-align: left;
+          width: auto;
+          left: 0; } }
+    body .intro .preamble :last-child {
+      margin-bottom: 0;
+      padding-bottom: 5px; }
+  @media only screen and (max-width: 560px) {
+    body #zen-preamble, body .explanation, body .requirements {
+      background-color: #2a2929;
+      color: #f8f8f8; } }
+  @media only screen and (max-width: 560px) {
+    body .explanation, body .benefits {
+      border-bottom: 1px solid #180D0C; } }
+  body .explanation :first-child, body .benefits :first-child {
+    margin-top: 0%; }
+  body .requirements p[role="contentinfo"] {
+    padding: 1em 2em;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #6fce72; }
+    body .requirements p[role="contentinfo"] a {
+      color: #EDD397; }
+  @media only screen and (min-width: 560px) {
+    body #zen-supporting div {
+      width: 60%;
+      margin: auto; }
+      body #zen-supporting div h3 {
+        position: relative;
+        left: -28%;
+        text-align: right;
+        width: inherit; } }
+  @media only screen and (max-width: 1075px) and (min-width: 560px) {
+    body #zen-supporting div {
+      margin: initial; }
+      body #zen-supporting div h3 {
+        text-align: left;
+        width: auto;
+        left: 0; } }
+  @media only screen and (min-width: 560px) {
+    body aside .design-selection, body aside .design-archives {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      position: absolute;
+      right: 0%;
+      max-width: 20%; }
+      body aside .design-selection h3, body aside .design-archives h3 {
+        margin: auto; } }
+    @media only screen and (min-width: 560px) and (max-width: 1075px) and (min-width: 560px) {
+      body aside .design-selection h3, body aside .design-archives h3 {
+        margin-top: 35%; } }
+
+  body aside .design-selection {
+    top: 33vh; }
+    @media only screen and (max-width: 1075px) and (min-width: 560px) {
+      body aside .design-selection {
+        top: 27vh;
+        min-width: 150px; } }
+  body aside .design-archives h3 {
+    display: none; }
+  body aside ul {
+    overflow: hidden;
+    padding-inline-start: 0px;
+    background-color: #180D0C; }
+  body aside .design-selection li:nth-child(2n+1), body aside .zen-resources li:nth-child(2n+1) {
+    clear: left; }
+  body aside .design-selection li, body aside .zen-resources li {
+    padding: .5em;
+    border-top: solid 1px #EDD397;
+    color: #c0cac3;
+    font-style: italic;
+    font-size: 1.1vw; }
+    @media only screen and (max-width: 560px) {
+      body aside .design-selection li, body aside .zen-resources li {
+        float: left;
+        width: 50%;
+        padding: 1em 10%;
+        font-size: 100%; } }
+    @media only screen and (max-width: 1075px) and (min-width: 560px) {
+      body aside .design-selection li, body aside .zen-resources li {
+        font-size: 12px; } }
+  body aside .zen-resources li:last-child {
+    float: none;
+    width: auto; }
+  body aside .design-name {
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.25em;
+    text-decoration: none;
+    color: #EDD397; }
+  body aside .design-name:hover {
+    color: #6fce72; }
+  body aside .designer-name {
+    color: #f8f8f8;
+    text-decoration: none; }
+  body aside .designer-name:hover {
+    color: #c7121e; }
+  body .zen-resources .resources {
+    margin-bottom: 0; }
+  body .zen-resources a {
+    text-decoration: none; }
+    @media only screen and (max-width: 560px) {
+      body .zen-resources a {
+        text-align: center; } }
+  body footer {
+    position: relative;
+    text-align: center;
+    display: flex;
+    width: fit-content;
+    margin: auto; }
+    @media only screen and (max-width: 560px) {
+      body footer {
+        width: 100%;
+        justify-content: space-evenly; } }
+    body footer a {
+      border: 1px solid black;
+      padding: 6px 1.5em; }
+    body footer a, body footer a:focus, body footer a:active {
+      text-decoration: none;
+      color: #c7121e; }
+    body footer a:hover {
+      color: #6fce72; }
+
+/*# sourceMappingURL=style.css.map */
